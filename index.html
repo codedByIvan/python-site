@@ -1,10 +1,10 @@
-
 <!doctype html>
 <html lang="ru">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>PY•LAB — Единый сайт</title>
+
 <style>
 :root{
   --bg:#030405;
@@ -13,19 +13,67 @@
   --muted:#8aa6a1;
   --mono:'Fira Code','Courier New',monospace;
 }
-html,body{margin:0;background:#000814;color:#cfeee8;font-family:var(--mono);}
-.container{max-width:1000px;margin:28px auto;padding:24px;background:rgba(255,255,255,0.03);border-radius:12px}
-.nav{display:flex;gap:8px;flex-wrap:wrap;margin:15px 0}
-.nav a{padding:8px 12px;border-radius:8px;text-decoration:none;color:#cfeee8;border:1px solid rgba(255,255,255,0.1)}
-.nav a:hover{background:rgba(0,255,127,0.06);border-color:rgba(0,255,127,0.2);color:var(--accent)}
-.section{margin-top:25px;padding:16px;background:var(--panel);border-radius:10px;border:1px solid rgba(255,255,255,0.06)}
-.section h1{color:var(--accent);margin-top:0}
-.code{background:#001217;padding:12px;border-radius:8px;white-space:pre-wrap;color:#b9f6ca;margin-top:12px}
-img{max-width:100%;border-radius:8px;margin-top:10px}
+html,body{
+  margin:0;
+  background:#000814;
+  color:#cfeee8;
+  font-family:var(--mono);
+}
+.container{
+  max-width:1000px;
+  margin:28px auto;
+  padding:24px;
+  background:rgba(255,255,255,0.03);
+  border-radius:12px;
+}
+.nav{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin:15px 0;
+}
+.nav a{
+  padding:8px 12px;
+  border-radius:8px;
+  text-decoration:none;
+  color:#cfeee8;
+  border:1px solid rgba(255,255,255,0.1);
+}
+.nav a:hover{
+  background:rgba(0,255,127,0.06);
+  border-color:rgba(0,255,127,0.2);
+  color:var(--accent);
+}
+.section{
+  margin-top:25px;
+  padding:16px;
+  background:var(--panel);
+  border-radius:10px;
+  border:1px solid rgba(255,255,255,0.06);
+}
+.section h1{
+  color:var(--accent);
+  margin-top:0;
+}
+.code{
+  background:#001217;
+  padding:12px;
+  border-radius:8px;
+  white-space:pre-wrap;
+  color:#b9f6ca;
+  margin-top:12px;
+}
+img{
+  max-width:100%;
+  border-radius:8px;
+  margin-top:10px;
+}
 </style>
 </head>
+
 <body>
 <div class="container">
+
 <h1 style="color:var(--accent)">PY•LAB — Единый сайт</h1>
 <p>Все разделы объединены в одну страницу.</p>
 
@@ -39,35 +87,49 @@ img{max-width:100%;border-radius:8px;margin-top:10px}
   <a href="#examples">Примеры</a>
   <a href="#resources">Ресурсы</a>
   <a href="#about">О проекте</a>
+  <a href="#gallery">Галерея</a>
 </div>
 
+
+<!-- ГЛАВНАЯ -->
 <div id="index" class="section">
 <h1>Python — Быстрый обзор</h1>
 <ul>
 <li>Язык высокого уровня</li>
 <li>Простой синтаксис</li>
-<li>Подходит для задач школы и колледжа</li>
+<li>Подходит для школьных задач</li>
 </ul>
+
 <img src="https://source.unsplash.com/featured/?python,code">
+<img src="https://source.unsplash.com/featured/?python,learning">
+<img src="https://source.unsplash.com/featured/?hacker,code">
 </div>
 
+
+<!-- СИНТАКСИС -->
 <div id="syntax" class="section">
 <h1>Синтаксис Python</h1>
 <div class="code">print("Hello, world")
 x = 5
 if x > 3:
     print("x больше 3")</div>
+
 <img src="https://source.unsplash.com/featured/?python,syntax">
 </div>
 
+
+<!-- ТИПЫ ДАННЫХ -->
 <div id="types" class="section">
 <h1>Типы данных</h1>
 <div class="code">a = 10
 b = 3.14
 s = "строка"</div>
+
 <img src="https://source.unsplash.com/featured/?data,python">
 </div>
 
+
+<!-- УПРАВЛЯЮЩИЕ КОНСТРУКЦИИ -->
 <div id="control" class="section">
 <h1>Управляющие конструкции</h1>
 <div class="code">for i in range(5):
@@ -76,32 +138,44 @@ s = "строка"</div>
 # while:
 # while условие:
 #     ...</div>
+
 <img src="https://source.unsplash.com/featured/?terminal,loop">
 </div>
 
+
+<!-- ФУНКЦИИ -->
 <div id="functions" class="section">
 <h1>Функции</h1>
 <div class="code">def greet(name):
     return f"Привет, {name}"
 
 print(greet("Иван"))</div>
+
 <img src="https://source.unsplash.com/featured/?python,function">
 </div>
 
+
+<!-- МОДУЛИ -->
 <div id="modules" class="section">
 <h1>Модули и пакеты</h1>
 <div class="code">import math
 print(math.sqrt(25))</div>
+
 <img src="https://source.unsplash.com/featured/?modules,python">
 </div>
 
+
+<!-- ПРИМЕРЫ -->
 <div id="examples" class="section">
 <h1>Примеры кода</h1>
 <div class="code">def sum_list(arr):
     return sum(arr)</div>
+
 <img src="https://source.unsplash.com/featured/?examples,python">
 </div>
 
+
+<!-- РЕСУРСЫ -->
 <div id="resources" class="section">
 <h1>Ресурсы</h1>
 <ul>
@@ -109,13 +183,27 @@ print(math.sqrt(25))</div>
 <li>Stepik, W3Schools, freeCodeCamp</li>
 <li>YouTube: Corey Schafer</li>
 </ul>
+
 <img src="https://source.unsplash.com/featured/?books,python">
 </div>
 
+
+<!-- О ПРОЕКТЕ -->
 <div id="about" class="section">
 <h1>О проекте</h1>
 <p>Этот сайт сделан как единый HTML-файл.</p>
 <img src="https://source.unsplash.com/featured/?hacker,neon">
+</div>
+
+
+<!-- ГАЛЕРЕЯ -->
+<div id="gallery" class="section">
+<h1>Галерея Python</h1>
+<p>Несколько тематических изображений, связанных с Python и программированием.</p>
+
+<img src="https://source.unsplash.com/featured/?python,programming">
+<img src="https://source.unsplash.com/featured/?coding,terminal">
+<img src="https://source.unsplash.com/featured/?computer,technology">
 </div>
 
 </div>
